@@ -12,7 +12,7 @@
 
 <link rel="stylesheet" href="/css/main.css">
 
-
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto+Serif+SC:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/css/all.min.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
@@ -22,15 +22,15 @@
     var CONFIG = {"hostname":"helloyjz.github.io","root":"/","scheme":"Gemini","version":"8.0.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
   </script>
 
-  <meta name="description" content="Welcome to my personal&#x2F;tech blog!">
+  <meta name="description" content="1print(&quot;Hello World&quot;)">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python基础">
 <meta property="og:url" content="https://helloyjz.github.io/2021/02/01/Python%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="helloYJZ">
-<meta property="og:description" content="Welcome to my personal&#x2F;tech blog!">
+<meta property="og:description" content="1print(&quot;Hello World&quot;)">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-02-01T03:52:01.000Z">
-<meta property="article:modified_time" content="2021-02-01T03:55:20.999Z">
+<meta property="article:modified_time" content="2021-02-01T07:11:17.125Z">
 <meta property="article:tag" content="Python">
 <meta name="twitter:card" content="summary">
 
@@ -163,7 +163,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -175,6 +175,7 @@
 
       <!--noindex-->
       <section class="post-toc-wrap sidebar-panel">
+          <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Python%E6%95%B0%E5%80%BC%E8%BF%90%E7%AE%97"><span class="nav-number">1.</span> <span class="nav-text">Python数值运算</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%A0%E7%A7%8D%E5%B8%B8%E7%94%A8%E7%B1%BB%E5%9E%8B"><span class="nav-number">1.1.</span> <span class="nav-text">几种常用类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2"><span class="nav-number">1.2.</span> <span class="nav-text">类型转换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E5%85%88%E5%90%8E%E9%A1%BA%E5%BA%8F"><span class="nav-number">1.3.</span> <span class="nav-text">计算先后顺序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%95%B0%E5%80%BC%E6%93%8D%E4%BD%9C"><span class="nav-number">1.4.</span> <span class="nav-text">基本数值操作</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Python%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%93%8D%E4%BD%9C"><span class="nav-number">2.</span> <span class="nav-text">Python字符串操作</span></a></li></ol></div>
       </section>
       <!--/noindex-->
 
@@ -242,7 +243,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2021-02-01 14:52:01 / Modified: 14:55:20" itemprop="dateCreated datePublished" datetime="2021-02-01T14:52:01+11:00">2021-02-01</time>
+      <time title="Created: 2021-02-01 14:52:01 / Modified: 18:11:17" itemprop="dateCreated datePublished" datetime="2021-02-01T14:52:01+11:00">2021-02-01</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -267,7 +268,27 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        
+        <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">&quot;Hello World&quot;</span>)</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+
+<h2 id="Python数值运算"><a href="#Python数值运算" class="headerlink" title="Python数值运算"></a>Python数值运算</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">4</span>*<span class="number">5</span></span><br><span class="line"><span class="number">10</span>/<span class="number">3</span> <span class="comment"># 除法</span></span><br><span class="line"><span class="number">10</span>%<span class="number">3</span> <span class="comment"># 取余数</span></span><br><span class="line"><span class="number">2</span>**<span class="number">3</span> <span class="comment"># 平方</span></span><br></pre></td></tr></table></figure>
+<h3 id="几种常用类型"><a href="#几种常用类型" class="headerlink" title="几种常用类型"></a>几种常用类型</h3><ul>
+<li>int</li>
+<li>float</li>
+<li>str</li>
+<li>bool 布尔类型</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">tang = <span class="number">1.5</span> <span class="comment"># 赋值 不用指定类型</span></span><br><span class="line"><span class="built_in">type</span>(tang) <span class="comment"># 查看类型 float</span></span><br><span class="line"></span><br><span class="line">tang2 = <span class="literal">True</span> <span class="comment"># 注意True/False首字母大写</span></span><br><span class="line"><span class="number">3</span> &gt; <span class="number">5</span> <span class="comment"># False</span></span><br></pre></td></tr></table></figure>
+<h3 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">int</span>(tang) <span class="comment"># float类型转换为int类型 1 int</span></span><br><span class="line"><span class="built_in">float</span>(tang) <span class="comment"># int类型转换为float类型 1.0 float</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">str</span> = <span class="string">&#x27;123&#x27;</span> <span class="comment"># 字符串类型 </span></span><br><span class="line"><span class="built_in">int</span>(<span class="built_in">str</span>) <span class="comment"># str类型转换为int类型 123 int </span></span><br><span class="line"><span class="comment"># 对于字符串类型，只有当字符串为数值时，才可以将其转换成int/float类型</span></span><br></pre></td></tr></table></figure>
+<h3 id="计算先后顺序"><a href="#计算先后顺序" class="headerlink" title="计算先后顺序"></a>计算先后顺序</h3><p>跟数学一致</p>
+<ol>
+<li>()</li>
+<li>** (平方)</li>
+<li>*/</li>
+<li>+-</li>
+</ol>
+<h3 id="基本数值操作"><a href="#基本数值操作" class="headerlink" title="基本数值操作"></a>基本数值操作</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">abs</span>(<span class="number">15.6</span>) <span class="comment"># 绝对值 15.6</span></span><br><span class="line"><span class="built_in">round</span>(<span class="number">15.6</span>) <span class="comment"># 四舍五入 16</span></span><br><span class="line"><span class="built_in">round</span>(<span class="number">15.4</span>) <span class="comment"># 15</span></span><br><span class="line"><span class="built_in">min</span>(<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>) <span class="comment"># 最大值 2</span></span><br><span class="line"><span class="built_in">max</span>(<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>) <span class="comment"># 最小值 5</span></span><br><span class="line"><span class="number">1.3e-5</span> <span class="comment"># 科学计数法 1.3x10^&#123;-5&#125; 更简单的数值表示</span></span><br><span class="line"><span class="number">1.3e5</span> <span class="comment"># 1.3x10^&#123;5&#125; 130000</span></span><br></pre></td></tr></table></figure>
+<h2 id="Python字符串操作"><a href="#Python字符串操作" class="headerlink" title="Python字符串操作"></a>Python字符串操作</h2>
     </div>
 
     
@@ -281,6 +302,15 @@
 
         
 
+          <div class="post-nav">
+            <div class="post-nav-item">
+            </div>
+            <div class="post-nav-item">
+                <a href="/2021/02/01/Numpy%E5%9F%BA%E7%A1%80/" rel="next" title="Numpy基础">
+                  Numpy基础 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
     </footer>
   </article>
   
@@ -324,7 +354,7 @@
 
 <div class="copyright">
   
-  &copy; 
+  &copy; 2020 – 
   <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
