@@ -22,12 +22,12 @@
     var CONFIG = {"hostname":"helloyjz.github.io","root":"/","scheme":"Gemini","version":"8.0.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
   </script>
 
-  <meta name="description" content="print(&quot;Hello World&quot;)">
+  <meta name="description" content="1print(&quot;Hello World&quot;)">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python基础">
 <meta property="og:url" content="https://helloyjz.github.io/2021/02/01/Python%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="helloYJZ">
-<meta property="og:description" content="print(&quot;Hello World&quot;)">
+<meta property="og:description" content="1print(&quot;Hello World&quot;)">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-02-01T03:52:01.000Z">
 <meta property="article:modified_time" content="2021-02-03T03:03:38.791Z">
@@ -270,14 +270,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>9.2k</span>
+      <span>10k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>8 分钟</span>
+      <span>9 分钟</span>
     </span>
 </div>
 
@@ -291,30 +291,18 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <pre><code class="python">print(&quot;Hello World&quot;)</code></pre>
+        <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">&quot;Hello World&quot;</span>)</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
 
-<h2 id="Python数值运算"><a href="#Python数值运算" class="headerlink" title="Python数值运算"></a>Python数值运算</h2><pre><code class="python">4*5
-10/3 # 除法
-10%3 # 取余数
-2**3 # 平方</code></pre>
+<h2 id="Python数值运算"><a href="#Python数值运算" class="headerlink" title="Python数值运算"></a>Python数值运算</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">4</span>*<span class="number">5</span></span><br><span class="line"><span class="number">10</span>/<span class="number">3</span> <span class="comment"># 除法</span></span><br><span class="line"><span class="number">10</span>%<span class="number">3</span> <span class="comment"># 取余数</span></span><br><span class="line"><span class="number">2</span>**<span class="number">3</span> <span class="comment"># 平方</span></span><br></pre></td></tr></table></figure>
 <h3 id="几种常用类型"><a href="#几种常用类型" class="headerlink" title="几种常用类型"></a>几种常用类型</h3><ul>
 <li>int</li>
 <li>float</li>
 <li>str</li>
 <li>bool 布尔类型</li>
 </ul>
-<pre><code class="python">tang = 1.5 # 赋值 不用指定类型
-type(tang) # 查看类型 float
-
-tang2 = True # 注意True/False首字母大写
-3 &gt; 5 # False</code></pre>
-<h3 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h3><pre><code class="python">int(tang) # float类型转换为int类型 1 int
-float(tang) # int类型转换为float类型 1.0 float
-
-str = &#39;123&#39; # 字符串类型 
-int(str) # str类型转换为int类型 123 int 
-# 对于字符串类型，只有当字符串为数值时，才可以将其转换成int/float类型</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">tang = <span class="number">1.5</span> <span class="comment"># 赋值 不用指定类型</span></span><br><span class="line"><span class="built_in">type</span>(tang) <span class="comment"># 查看类型 float</span></span><br><span class="line"></span><br><span class="line">tang2 = <span class="literal">True</span> <span class="comment"># 注意True/False首字母大写</span></span><br><span class="line"><span class="number">3</span> &gt; <span class="number">5</span> <span class="comment"># False</span></span><br></pre></td></tr></table></figure>
+<h3 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">int</span>(tang) <span class="comment"># float类型转换为int类型 1 int</span></span><br><span class="line"><span class="built_in">float</span>(tang) <span class="comment"># int类型转换为float类型 1.0 float</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">str</span> = <span class="string">&#x27;123&#x27;</span> <span class="comment"># 字符串类型 </span></span><br><span class="line"><span class="built_in">int</span>(<span class="built_in">str</span>) <span class="comment"># str类型转换为int类型 123 int </span></span><br><span class="line"><span class="comment"># 对于字符串类型，只有当字符串为数值时，才可以将其转换成int/float类型</span></span><br></pre></td></tr></table></figure>
 <h3 id="计算先后顺序"><a href="#计算先后顺序" class="headerlink" title="计算先后顺序"></a>计算先后顺序</h3><p>跟数学一致</p>
 <ol>
 <li>()</li>
@@ -322,330 +310,60 @@ int(str) # str类型转换为int类型 123 int
 <li>*/</li>
 <li>+-</li>
 </ol>
-<h3 id="基本数值操作"><a href="#基本数值操作" class="headerlink" title="基本数值操作"></a>基本数值操作</h3><pre><code class="python">abs(15.6) # 绝对值 15.6
-round(15.6) # 四舍五入 16
-round(15.4) # 15
-min(2,3,4,5) # 最大值 2
-max(2,3,4,5) # 最小值 5
-1.3e-5 # 科学计数法 1.3x10^&#123;-5&#125; 更简单的数值表示
-1.3e5 # 1.3x10^&#123;5&#125; 130000</code></pre>
-<h2 id="Python字符串操作"><a href="#Python字符串操作" class="headerlink" title="Python字符串操作"></a>Python字符串操作</h2><pre><code class="python">str1 = &#39;Hello Python&#39;
-str2 = &#39;Hello&#39; + &#39;Python&#39; # &#39;HelloPython&#39; # 加法连接两个字符串
-str1*3 # &#39;Hello Python Hello Python Hello Python&#39; # 乘法重复打印
-len(str2) # 字符串长度 11 </code></pre>
-<h3 id="字符串操作"><a href="#字符串操作" class="headerlink" title="字符串操作"></a>字符串操作</h3><h4 id="切分"><a href="#切分" class="headerlink" title="切分"></a>切分</h4><pre><code class="python">str3 = &#39;1 2 3 4 5&#39;
-str3.split() # 切分字符串 默认以空格切分 # [&#39;1&#39;,&#39;2&#39;,&#39;3&#39;,&#39;4&#39;,&#39;5&#39;]
-
-str4 = &#39;1,2,3,4,5&#39;
-str4.split(&#39;,&#39;) # 以逗号切分字符串 # [&#39;1&#39;,&#39;2&#39;,&#39;3&#39;,&#39;4&#39;,&#39;5&#39;]
-</code></pre>
-<h4 id="合并"><a href="#合并" class="headerlink" title="合并"></a>合并</h4><pre><code class="python">str4 = &#39; &#39;
-str4.join(str4) # 合并切分后的字符串列 # &#39;1 2 3 4 5&#39;</code></pre>
-<h4 id="替换"><a href="#替换" class="headerlink" title="替换"></a>替换</h4><pre><code class="python">str5 = &#39;hello python&#39;
-str6 = str5.replace(&#39;python&#39;,&#39;world&#39;) # &#39;hello world&#39; </code></pre>
-<h4 id="大小写转换"><a href="#大小写转换" class="headerlink" title="大小写转换"></a>大小写转换</h4><pre><code class="python">str7 = str6.upper() # &#39;HELLO WORLD&#39;
-str7.lower() # &#39;hello world&#39; </code></pre>
-<h4 id="去掉空格"><a href="#去掉空格" class="headerlink" title="去掉空格"></a>去掉空格</h4><pre><code class="python">str8 = &#39;     hello python     &#39;
-str8.strip() # &#39;hello python&#39; # 去掉左右两边空格
-
-str8.lstrip() # hello python     &#39; # 去掉左边空格
-str8.rstrip() # &#39;     hello python&#39; # 去掉右边空格</code></pre>
-<h4 id="格式化"><a href="#格式化" class="headerlink" title="格式化"></a>格式化</h4><pre><code class="python">&#39;&#123;&#125; &#123;&#125; &#123;&#125;&#39;.format(&#39;a&#39;,&#39;b&#39;,&#39;c&#39;) # 往字符串中传递参数 # &#39;a b c&#39;
-&#39;&#123;2&#125; &#123;1&#125; &#123;0&#125;&#39;.format(&#39;a&#39;,&#39;b&#39;,&#39;c&#39;) # 自定义顺序 # &#39;c b a&#39; 
-&#39;&#123;a&#125; &#123;b&#125; &#123;c&#125;&#39;.format(a=1, b=2, c=3) #指定参数 # 1,2,3 
-
-# 用%形式 
-# 相对麻烦一点
-x = &#39;hi&#39;
-y = 21.0
-z = &#39;6&#39;
-result = &#39;%s %f % d&#39;%(x, y, z) # &#39;hi 21.00000 6&#39; # s-string, f-float, d-integer</code></pre>
-<h2 id="List结构"><a href="#List结构" class="headerlink" title="List结构"></a>List结构</h2><pre><code class="python">l1 = [] # 空列表
-l2 = [1,2,3,4] # 通过[]来创建list结构
-l3 = [&#39;1.0&#39;,&#39;hello python&#39;,3,4] # 列表可以存放任何类型，没有长度限制
-l4 = [1,2,[3,4]] # 甚至可以在list中存放list # 此时list是2维的
-
-l5 = list() # 另一种声明list结构的方式 # 不方便
-l6 = list([1,2,3])</code></pre>
-<h3 id="List操作"><a href="#List操作" class="headerlink" title="List操作"></a>List操作</h3><h4 id="加法乘法"><a href="#加法乘法" class="headerlink" title="加法乘法"></a>加法乘法</h4><pre><code class="python">len(l3) # list长度 # 4
-
-a = [123,456]
-b = [&#39;a&#39;,&#39;b&#39;]
-a + b # 连接几个list [123,456,&#39;a&#39;,&#39;b&#39;]
-a * 2 # 复制list # [123,456,123,456]
-</code></pre>
-<h4 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h4><pre><code class="python">a[0] # 做索引 # 123
-a[0:] # 从列表首元素(index=0)到列表结尾 # [123,456]
-c = [1,2,3,4,5,6,7,8,9]
-c[4:7] # 提取index=4到index=7-1位置的元素 # 包（括）头不包尾 # [5,6,7] 
-
-d = [1,2,[3,4]] #针对2维list做索引 # list of list
-d[2] # [3,4]
-d[2][0] # 3
-
-e = [a,&#39;1&#39;,&#39;2&#39;,&#39;3&#39;,&#39;4&#39;]
-e.index(&#39;2&#39;) # 通过值定位索引 #list中需有该值才可查找 # 2</code></pre>
-<h4 id="替换删除"><a href="#替换删除" class="headerlink" title="替换删除"></a>替换删除</h4><pre><code class="python">a[0] = 789 # 替换指定位置元素的值 # a此时是[789,456]
-
-del c[0] # 删除列表中指定元素 # 执行过后 c是[2,3,4,5,6,7,8,9] # 如果重复执行会一直删除首元素</code></pre>
-<h4 id="in"><a href="#in" class="headerlink" title="in"></a>in</h4><pre><code class="python">d = [1,2,3,4,5,6,7,8,9]
-8 in d # True
-10 in d # False
-10 not in d # True
-e = &#39;a b c&#39;
-&#39;a&#39; in e # in关键词还可以作用在字符串上 # True  </code></pre>
-<h4 id="计数"><a href="#计数" class="headerlink" title="计数"></a>计数</h4><pre><code class="python">a = [&#39;a&#39;,&#39;a&#39;,&#39;a&#39;,&#39;b&#39;,&#39;b&#39;,&#39;c&#39;]
-a.count(&#39;a&#39;) # 计数 # 3</code></pre>
-<h4 id="添加移除"><a href="#添加移除" class="headerlink" title="添加移除"></a>添加移除</h4><pre><code class="python">a = []
-a.append(&#39;a&#39;) # 往空列表中添加元素 # [&#39;a&#39;]
-a.append([&#39;1&#39;,&#39;2&#39;]) # 继续添加 这次添加的是一个list # [&#39;a&#39;,[&#39;1&#39;,&#39;2&#39;]]
-# .append() 在列表末尾添加
-
-a.insert(1,&#39;b&#39;) # 在列表index=1处插入元素&#39;b&#39; # [&#39;a&#39;,&#39;b&#39;,[&#39;1&#39;,&#39;2&#39;]]
-
-b = [&#39;a&#39;,&#39;a&#39;,&#39;b&#39;,1,2,3,4]
-b.remove(&#39;a&#39;) # 移除列表中元素&#39;a&#39; # 有多个相同值时默认移除第一个出现的 # [&#39;a&#39;,&#39;b&#39;,1,2,3,4]</code></pre>
-<h4 id="弹出"><a href="#弹出" class="headerlink" title="弹出"></a>弹出</h4><pre><code class="python">a = [&#39;python&#39;,&#39;abc&#39;]
-a.pop(1) # 弹出index=1处的元素，并删除这个元素 # &#39;abc&#39;
-# a此时为[&#39;python&#39;]</code></pre>
-<h4 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h4><pre><code class="python">a = [1,4,2,3]
-a.sort() # 直接对原列表排序 # [1,2,3,4]
-
-b = [1,4,5,2,3]
-b2 = sorted(b) #不改变原列表 # b2为[1,2,3,4,5] # b没有变化 [1,4,5,2,3]</code></pre>
-<h4 id="颠倒"><a href="#颠倒" class="headerlink" title="颠倒"></a>颠倒</h4><pre><code class="python">a = [&#39;c&#39;,&#39;b&#39;,&#39;a&#39;]
-a.reverse() # [&#39;a&#39;,&#39;b&#39;,&#39;c&#39;]</code></pre>
-<h2 id="字典结构"><a href="#字典结构" class="headerlink" title="字典结构"></a>字典结构</h2><pre><code class="python"># 两种定义方法
-dic = &#123;&#125;
-dic2 = dict()</code></pre>
-<h3 id="字典操作"><a href="#字典操作" class="headerlink" title="字典操作"></a>字典操作</h3><h4 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h4><pre><code class="python"># key-value # 键-值
-dic = &#123;&#125;
-dic[&#39;first&#39;] = 123 # dic此时为&#123;&#39;first&#39;:123&#125;
-dic[&#39;python&#39;] = 456 # dic此时为&#123;&#39;first&#39;:123,&#39;python&#39;:456&#125;
-
-# 上述方式一个个往字典里加，也可以一次性初始化好
-dic2 = &#123;&#39;first&#39;:123,&#39;python&#39;:789&#125;
-# 或者
-dic2 = dict([(&#39;first&#39;,123),(&#39;python&#39;,789)]) # &#123;&#39;first&#39;:123,&#39;python&#39;:789&#125; # 比较麻烦不直接</code></pre>
-<h4 id="通过键找到值"><a href="#通过键找到值" class="headerlink" title="通过键找到值"></a>通过键找到值</h4><pre><code class="python"># 字典没有顺序，索引不通过index来做
-dic = &#123;&#39;first&#39;:123,&#39;python&#39;:789&#125;
-dic[&#39;python&#39;] # 通过键找到值 # 456
-
-# 另一种通过键找到值的方式
-dic.get(&#39;python&#39;) # 456
-
-dic[&#39;python&#39;] = 789 # 更新值 # dic此时为&#123;&#39;first&#39;:123,&#39;python&#39;:789&#125;</code></pre>
-<h4 id="嵌套"><a href="#嵌套" class="headerlink" title="嵌套"></a>嵌套</h4><pre><code class="python">l1 = [1,2,3]
-dic = &#123;&#125;
-dic[&#39;a&#39;] = l1 # dic此时为&#123;&#39;a&#39;:[1,2,3]&#125;
-# key值一般都是字符串，value值什么都可以
-
-dic2 = &#123;&#125;
-d1 = &#123;&#39;a&#39;:1,&#39;b&#39;:2&#125;
-d2 = &#123;&#39;c&#39;:3,&#39;e&#39;:4&#125;
-dic2[&#39;test1&#39;] = d1
-dic2[&#39;test2&#39;] = d2
-dic2 # &#123;&#39;test1&#39;:&#123;&#39;a&#39;:1,&#39;b&#39;:2&#125;, &#39;test2&#39;:&#123;&#39;c&#39;:3,&#39;e&#39;:4&#125;&#125; # 字典结构嵌套字典结构</code></pre>
-<h4 id="对键值进行操作"><a href="#对键值进行操作" class="headerlink" title="对键值进行操作"></a>对键值进行操作</h4><pre><code class="python">dic = &#123;&#39;first&#39;:123,&#39;python&#39;:789&#125;
-dic[&#39;first&#39;] += 1 # 自加1 # dic此时为&#123;&#39;first&#39;:124,&#39;python&#39;:789&#125;</code></pre>
-<h4 id="弹出-1"><a href="#弹出-1" class="headerlink" title="弹出"></a>弹出</h4><pre><code class="python">dic = &#123;&#39;first&#39;:123,&#39;python&#39;:789&#125;
-dic.pop(&#39;first&#39;) # dic此时为&#123;&#39;python&#39;:789&#125;
-# pop弹出并移除</code></pre>
-<h4 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h4><pre><code class="python">dic = &#123;&#39;first&#39;:123,&#39;python&#39;:789&#125;
-del dic[&#39;first&#39;] # dic此时为&#123;&#39;python&#39;:789&#125;</code></pre>
-<h4 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h4><pre><code class="python">d1 = &#123;&#39;a&#39;:123,&#39;b&#39;:789&#125;
-d2 = &#123;&#39;a&#39;:789,&#39;c&#39;:888&#125;
-d1.update(d2) # d1此时为&#123;&#39;a&#39;:789,&#39;b&#39;:789,&#39;c&#39;:888&#125;
-# update更新并添加键值 </code></pre>
-<h4 id="in-1"><a href="#in-1" class="headerlink" title="in"></a>in</h4><pre><code class="python">d1 = &#123;&#39;a&#39;:123,&#39;b&#39;:789&#125;
-&#39;a&#39; in d1 # True
-&#39;hello&#39; in d1 # False</code></pre>
-<h4 id="打印键值"><a href="#打印键值" class="headerlink" title="打印键值"></a>打印键值</h4><pre><code class="python">d1 = &#123;&#39;a&#39;:123,&#39;b&#39;:789&#125;
-d1.keys() # dict_keys([&#39;a&#39;,&#39;b&#39;])
-d1.values() # dict_values([123,789])
-d1.items() # dict_items([(&#39;a&#39;,123),(&#39;b&#39;,789)])</code></pre>
-<h2 id="Set集合结构"><a href="#Set集合结构" class="headerlink" title="Set集合结构"></a>Set集合结构</h2><pre><code class="python">s = [1,1,1,2,3]
-s1 = set(s) # 集合会保留下来唯一的那些元素 # &#123;1,2,3&#125;
-# 集合中元素唯一
-
-s2 = set([1,1,1,2,3]) # [1,2,3]
-s2 = &#123;1,1,1,2,3&#125; # [1,2,3] 
-# &#123;&#125;写上key-value是字典，不写是集合</code></pre>
-<h3 id="集合操作"><a href="#集合操作" class="headerlink" title="集合操作"></a>集合操作</h3><h4 id="并集"><a href="#并集" class="headerlink" title="并集"></a>并集</h4><pre><code class="python">a = &#123;1,2,3,4&#125;
-b = &#123;2,3,4,5&#125;
-
-a.union(b) # a和b的并集 # &#123;1,2,3,4,5&#125;
-b.union(a) # b和a的并集 # &#123;1,2,3,4,5&#125;
-a | b # |并集符合 # &#123;1,2,3,4,5&#125;</code></pre>
-<h4 id="交集"><a href="#交集" class="headerlink" title="交集"></a>交集</h4><pre><code class="python">a = &#123;1,2,3,4&#125;
-b = &#123;2,3,4,5&#125;
-a.intersection(b) # &#123;2,3,4&#125;
-a &amp; b # &amp; 交集符合 # &#123;2,3,4&#125;</code></pre>
-<h4 id="差集"><a href="#差集" class="headerlink" title="差集"></a>差集</h4><pre><code class="python">a = &#123;1,2,3,4&#125;
-b = &#123;2,3,4,5&#125;
-a.difference(b) # a中有b中没有的集合 # &#123;1&#125;
-b.difference(a) # b中有a中没有的集合 # &#123;5&#125;
-
-a - b # &#123;1&#125;
-b - a # &#123;5&#125;</code></pre>
-<h4 id="子集"><a href="#子集" class="headerlink" title="子集"></a>子集</h4><pre><code class="python">a = &#123;1,2,3,4,5,6&#125;
-b = &#123;2,3,4&#125;
-b.issubset&#123;a&#125; # b是否是a的子集 # True
-a.issubset&#123;b&#125; # a是否是b的子集 # False
-
-b &lt;= a # True
-b &gt; a # False
-a &lt;= a # 自己是自己的子集 # True</code></pre>
-<h4 id="添加"><a href="#添加" class="headerlink" title="添加"></a>添加</h4><pre><code class="python">a = &#123;1,2,3&#125;
-a.add(4) # &#123;1,2,3,4&#125;</code></pre>
-<h4 id="更新-1"><a href="#更新-1" class="headerlink" title="更新"></a>更新</h4><pre><code>a = &#123;1,2,3&#125;
-a.update([4,5,6]) # &#123;1,2,3,4,5,6&#125;</code></pre>
-<h4 id="删除-1"><a href="#删除-1" class="headerlink" title="删除"></a>删除</h4><pre><code>a = &#123;1,2,3,4,5,6&#125;
-a.remove(1) # &#123;2,3,4,5,6&#125;</code></pre>
-<h4 id="弹出-2"><a href="#弹出-2" class="headerlink" title="弹出"></a>弹出</h4><pre><code class="python">a = &#123;2,3,4,5,6&#125;
-a.pop() # 不能加参数 每次只弹出集合中首元素 # &#123;3,4,5,6&#125;</code></pre>
-<h2 id="判断结构"><a href="#判断结构" class="headerlink" title="判断结构"></a>判断结构</h2><pre><code class="python">a = 100
-if a &gt; 200:
-    print(&#39;200&#39;)
-elif a &lt; 100: # elif可以写多个
-    print(&#39;100&#39;)
-else: # else至多只有一个
-    print(&#39;100-200&#39;)</code></pre>
-<pre><code class="python">a = [123,456,789]
-if 123 in a:
-    print(&#39;ok&#39;)</code></pre>
-<pre><code class="python">a = &#123;&#39;a&#39;:123, &#39;b&#39;:456&#125;
-if &#39;a&#39; in a:
-    print(&#39;ok&#39;)</code></pre>
-<h2 id="循环结构"><a href="#循环结构" class="headerlink" title="循环结构"></a>循环结构</h2><h3 id="while循环"><a href="#while循环" class="headerlink" title="while循环"></a>while循环</h3><pre><code class="python">a = 0
-while a &lt; 10:
-    print(a)
-    a += 1 # 防止死循环</code></pre>
-<pre><code class="python">a = set([&#39;a&#39;,&#39;b&#39;,&#39;c&#39;]) #集合
-while a:
-    b = a.pop()
-    print(b) # &#39;a&#39;,&#39;b&#39;,&#39;c&#39;</code></pre>
-<h3 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h3><pre><code class="python">a = set([&#39;a&#39;,&#39;b&#39;,&#39;c&#39;])
-for b in a: # b是变量的别名 # 相当于把集合中的值赋值给了b
-    print(b) # &#39;a&#39;,&#39;b&#39;,&#39;c&#39;</code></pre>
-<pre><code class="python">for i in range(10): # range(10) 从0开始的10个数，到9
-    print(i)</code></pre>
-<pre><code class="python">a = [123,456,789,0]
-for i in range(3): # 把i当作索引 打印列表a中从0到3-1元素
-    print(a[i]) # 123 456 789
-
-for i in range(len(a)): # 打印列表a中从0到len(a)-1元素，即列表全部元素
-    print(a[i]) # 123 456 789 0</code></pre>
-<h3 id="continue"><a href="#continue" class="headerlink" title="continue"></a>continue</h3><pre><code class="python">a = [10,11,12,13,14,15]
-for i in a:
-    if i%2 == 0: # 余数为0，即偶数
-        print(i)
-    else:
-        continue # 代码执行到此进行下一次遍历，下一行的print(i)不会执行，因此11,13,15不会打印
-    print(i)
-# 10 10 12 12 14 14</code></pre>
-<h3 id="break"><a href="#break" class="headerlink" title="break"></a>break</h3><pre><code class="python">a = [10,11,12,13,14,15]
-for i in a:
-    if i%2 == 0: # 余数为0，即偶数
-        print(i)
-    else:
-        break # 结束整个循环，因此10以后的值不会打印
-    print(i)
-# 10 10 </code></pre>
-<h2 id="函数定义"><a href="#函数定义" class="headerlink" title="函数定义"></a>函数定义</h2><pre><code class="python">def print_value():
-    print(&quot;Hello World&quot;)
-
-def add_ab(a, b):
-    return(a+b)
-add = add_ab(3,5) # 定义函数中有两个参数，调用时也需要有两个参数 # 8</code></pre>
-<pre><code class="python">def add_ab(a=1, b=2)： # 设置默认值
-    return(a+b)
-default = add_ab() # 3</code></pre>
-<pre><code class="python">def add_number(a, *args): # *args让函数接受不确定个数的参数
-    b = 0
-    for i in args:
-        a += i
-        b += a
-    return a, b # 可以return多个值
-a, b = add_number(1,2,3) # 6 9 </code></pre>
-<pre><code class="python">def add_number2(a, **kwargs): # **kwargs 传进来的参数只能是键值对的格式
-    for arg,value in kwargs.items():
-        print(arg, value)
-add_number2(1,x=2,y=3) 
-# y 3
-# x 2</code></pre>
-<h2 id="异常"><a href="#异常" class="headerlink" title="异常"></a>异常</h2><pre><code class="python"># try...except...
-import math
-for i in range(10):
-    try:
-        input_number = input(&quot;enter a number: &quot;) # input()让用户输入
-        if input_number == &#39;q&#39;:
-            break
-        result = math.log(float(input_number))
-        print(result)
-    except ValueError: # except可以写多个
-        print(&#39;ValueError: input must &gt; 0&#39;)
-    except ZeroDivisionError:
-        print(&#39;divided by 0&#39;)
-    except Exception: 
-        print(&#39;Error&#39;)
-    finally:
-        print(&#39;always print finally block&#39;) # finally部分始终会执行</code></pre>
-<h2 id="类"><a href="#类" class="headerlink" title="类"></a>类</h2><pre><code class="python">class soldier:
-    &#39;帮助信息：XXXXXX&#39; # 用soldier.__doc__ 调用
-
-    hp = 100 # 所有实例都会共享
-
-    # 构造函数，初始化的方法，当创建一个类的时候，首先会调用它
-    def __init__(self, name, age): # 注意init前后是两个&#39;_&#39;
-        self.name = name
-        self.age = age
-
-    def display(self):
-        print(&#39;hp = &#39;, soldier.hp) 
-
-    def display_name(self):
-        print(self.name)
-
-p1 = soldier(&#39;Jeff&#39;,30) # name, age
-p2 = soldier(&#39;tom&#39;,31)
-p1.name # Jeff
-p1.display() # &#39;hp = 100&#39;
-
-hasattr(p1, &#39;name&#39;) # True
-getattr(p1, &#39;name&#39;) # &#39;Jeff&#39;
-setattr(p1, &#39;name&#39;, &#39;Jeffrey&#39;) # 改变p1名字
-delattr(p1, &#39;name&#39;) # 删除p1名字
-</code></pre>
-<h3 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h3><pre><code class="python"># 定义父类
-class Parent:
-    number = 100
-    def __init__(self):
-        print(&#39;调用父类构造函数&#39;)
-    def parentMethod(self):
-        print(&#39;调用父类方法&#39;)
-    def setAttr(self,attr):
-        Parent.parentAttr = attr
-    def getAttr(self):
-        print(&#39;父类属性：&#39;, Parent.parentAttr)
-    def newMethod(self):
-        print(&#39;父类要被重写的方法&#39;)
-# 定义子类
-class child(Parent):
-    def __init__(self):
-        print(&#39;调用子类构造函数&#39;)
-    def childMethod(self):
-        print(&#39;调用子类方法&#39;)
-    def newMethod(self): # 子类方法重新，名字和父类一致
-        print(&#39;子类把父类的方法改掉了&#39;)
-
-# 实例化子类
-c = child() # &#39;调用子类构造函数&#39;
-c.childMethod() # &#39;调用子类方法&#39;
-c.parentMethod() # &#39;调用父类方法&#39;
-c.setAttr(100)
-c.getAttr() # &#39;父类属性：100&#39;
-c.newMethod() # &#39;子类把父类的方法改掉了&#39;</code></pre>
+<h3 id="基本数值操作"><a href="#基本数值操作" class="headerlink" title="基本数值操作"></a>基本数值操作</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">abs</span>(<span class="number">15.6</span>) <span class="comment"># 绝对值 15.6</span></span><br><span class="line"><span class="built_in">round</span>(<span class="number">15.6</span>) <span class="comment"># 四舍五入 16</span></span><br><span class="line"><span class="built_in">round</span>(<span class="number">15.4</span>) <span class="comment"># 15</span></span><br><span class="line"><span class="built_in">min</span>(<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>) <span class="comment"># 最大值 2</span></span><br><span class="line"><span class="built_in">max</span>(<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>) <span class="comment"># 最小值 5</span></span><br><span class="line"><span class="number">1.3e-5</span> <span class="comment"># 科学计数法 1.3x10^&#123;-5&#125; 更简单的数值表示</span></span><br><span class="line"><span class="number">1.3e5</span> <span class="comment"># 1.3x10^&#123;5&#125; 130000</span></span><br></pre></td></tr></table></figure>
+<h2 id="Python字符串操作"><a href="#Python字符串操作" class="headerlink" title="Python字符串操作"></a>Python字符串操作</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">str1 = <span class="string">&#x27;Hello Python&#x27;</span></span><br><span class="line">str2 = <span class="string">&#x27;Hello&#x27;</span> + <span class="string">&#x27;Python&#x27;</span> <span class="comment"># &#x27;HelloPython&#x27; # 加法连接两个字符串</span></span><br><span class="line">str1*<span class="number">3</span> <span class="comment"># &#x27;Hello Python Hello Python Hello Python&#x27; # 乘法重复打印</span></span><br><span class="line"><span class="built_in">len</span>(str2) <span class="comment"># 字符串长度 11 </span></span><br></pre></td></tr></table></figure>
+<h3 id="字符串操作"><a href="#字符串操作" class="headerlink" title="字符串操作"></a>字符串操作</h3><h4 id="切分"><a href="#切分" class="headerlink" title="切分"></a>切分</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">str3 = <span class="string">&#x27;1 2 3 4 5&#x27;</span></span><br><span class="line">str3.split() <span class="comment"># 切分字符串 默认以空格切分 # [&#x27;1&#x27;,&#x27;2&#x27;,&#x27;3&#x27;,&#x27;4&#x27;,&#x27;5&#x27;]</span></span><br><span class="line"></span><br><span class="line">str4 = <span class="string">&#x27;1,2,3,4,5&#x27;</span></span><br><span class="line">str4.split(<span class="string">&#x27;,&#x27;</span>) <span class="comment"># 以逗号切分字符串 # [&#x27;1&#x27;,&#x27;2&#x27;,&#x27;3&#x27;,&#x27;4&#x27;,&#x27;5&#x27;]</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="合并"><a href="#合并" class="headerlink" title="合并"></a>合并</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">str4 = <span class="string">&#x27; &#x27;</span></span><br><span class="line">str4.join(str4) <span class="comment"># 合并切分后的字符串列 # &#x27;1 2 3 4 5&#x27;</span></span><br></pre></td></tr></table></figure>
+<h4 id="替换"><a href="#替换" class="headerlink" title="替换"></a>替换</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">str5 = <span class="string">&#x27;hello python&#x27;</span></span><br><span class="line">str6 = str5.replace(<span class="string">&#x27;python&#x27;</span>,<span class="string">&#x27;world&#x27;</span>) <span class="comment"># &#x27;hello world&#x27; </span></span><br></pre></td></tr></table></figure>
+<h4 id="大小写转换"><a href="#大小写转换" class="headerlink" title="大小写转换"></a>大小写转换</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">str7 = str6.upper() <span class="comment"># &#x27;HELLO WORLD&#x27;</span></span><br><span class="line">str7.lower() <span class="comment"># &#x27;hello world&#x27; </span></span><br></pre></td></tr></table></figure>
+<h4 id="去掉空格"><a href="#去掉空格" class="headerlink" title="去掉空格"></a>去掉空格</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">str8 = <span class="string">&#x27;     hello python     &#x27;</span></span><br><span class="line">str8.strip() <span class="comment"># &#x27;hello python&#x27; # 去掉左右两边空格</span></span><br><span class="line"></span><br><span class="line">str8.lstrip() <span class="comment"># hello python     &#x27; # 去掉左边空格</span></span><br><span class="line">str8.rstrip() <span class="comment"># &#x27;     hello python&#x27; # 去掉右边空格</span></span><br></pre></td></tr></table></figure>
+<h4 id="格式化"><a href="#格式化" class="headerlink" title="格式化"></a>格式化</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&#x27;&#123;&#125; &#123;&#125; &#123;&#125;&#x27;</span>.<span class="built_in">format</span>(<span class="string">&#x27;a&#x27;</span>,<span class="string">&#x27;b&#x27;</span>,<span class="string">&#x27;c&#x27;</span>) <span class="comment"># 往字符串中传递参数 # &#x27;a b c&#x27;</span></span><br><span class="line"><span class="string">&#x27;&#123;2&#125; &#123;1&#125; &#123;0&#125;&#x27;</span>.<span class="built_in">format</span>(<span class="string">&#x27;a&#x27;</span>,<span class="string">&#x27;b&#x27;</span>,<span class="string">&#x27;c&#x27;</span>) <span class="comment"># 自定义顺序 # &#x27;c b a&#x27; </span></span><br><span class="line"><span class="string">&#x27;&#123;a&#125; &#123;b&#125; &#123;c&#125;&#x27;</span>.<span class="built_in">format</span>(a=<span class="number">1</span>, b=<span class="number">2</span>, c=<span class="number">3</span>) <span class="comment">#指定参数 # 1,2,3 </span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 用%形式 </span></span><br><span class="line"><span class="comment"># 相对麻烦一点</span></span><br><span class="line">x = <span class="string">&#x27;hi&#x27;</span></span><br><span class="line">y = <span class="number">21.0</span></span><br><span class="line">z = <span class="string">&#x27;6&#x27;</span></span><br><span class="line">result = <span class="string">&#x27;%s %f % d&#x27;</span>%(x, y, z) <span class="comment"># &#x27;hi 21.00000 6&#x27; # s-string, f-float, d-integer</span></span><br></pre></td></tr></table></figure>
+<h2 id="List结构"><a href="#List结构" class="headerlink" title="List结构"></a>List结构</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">l1 = [] <span class="comment"># 空列表</span></span><br><span class="line">l2 = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>] <span class="comment"># 通过[]来创建list结构</span></span><br><span class="line">l3 = [<span class="string">&#x27;1.0&#x27;</span>,<span class="string">&#x27;hello python&#x27;</span>,<span class="number">3</span>,<span class="number">4</span>] <span class="comment"># 列表可以存放任何类型，没有长度限制</span></span><br><span class="line">l4 = [<span class="number">1</span>,<span class="number">2</span>,[<span class="number">3</span>,<span class="number">4</span>]] <span class="comment"># 甚至可以在list中存放list # 此时list是2维的</span></span><br><span class="line"></span><br><span class="line">l5 = <span class="built_in">list</span>() <span class="comment"># 另一种声明list结构的方式 # 不方便</span></span><br><span class="line">l6 = <span class="built_in">list</span>([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>])</span><br></pre></td></tr></table></figure>
+<h3 id="List操作"><a href="#List操作" class="headerlink" title="List操作"></a>List操作</h3><h4 id="加法乘法"><a href="#加法乘法" class="headerlink" title="加法乘法"></a>加法乘法</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">len</span>(l3) <span class="comment"># list长度 # 4</span></span><br><span class="line"></span><br><span class="line">a = [<span class="number">123</span>,<span class="number">456</span>]</span><br><span class="line">b = [<span class="string">&#x27;a&#x27;</span>,<span class="string">&#x27;b&#x27;</span>]</span><br><span class="line">a + b <span class="comment"># 连接几个list [123,456,&#x27;a&#x27;,&#x27;b&#x27;]</span></span><br><span class="line">a * <span class="number">2</span> <span class="comment"># 复制list # [123,456,123,456]</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">a[<span class="number">0</span>] <span class="comment"># 做索引 # 123</span></span><br><span class="line">a[<span class="number">0</span>:] <span class="comment"># 从列表首元素(index=0)到列表结尾 # [123,456]</span></span><br><span class="line">c = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>]</span><br><span class="line">c[<span class="number">4</span>:<span class="number">7</span>] <span class="comment"># 提取index=4到index=7-1位置的元素 # 包（括）头不包尾 # [5,6,7] </span></span><br><span class="line"></span><br><span class="line">d = [<span class="number">1</span>,<span class="number">2</span>,[<span class="number">3</span>,<span class="number">4</span>]] <span class="comment">#针对2维list做索引 # list of list</span></span><br><span class="line">d[<span class="number">2</span>] <span class="comment"># [3,4]</span></span><br><span class="line">d[<span class="number">2</span>][<span class="number">0</span>] <span class="comment"># 3</span></span><br><span class="line"></span><br><span class="line">e = [a,<span class="string">&#x27;1&#x27;</span>,<span class="string">&#x27;2&#x27;</span>,<span class="string">&#x27;3&#x27;</span>,<span class="string">&#x27;4&#x27;</span>]</span><br><span class="line">e.index(<span class="string">&#x27;2&#x27;</span>) <span class="comment"># 通过值定位索引 #list中需有该值才可查找 # 2</span></span><br></pre></td></tr></table></figure>
+<h4 id="替换删除"><a href="#替换删除" class="headerlink" title="替换删除"></a>替换删除</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a[<span class="number">0</span>] = <span class="number">789</span> <span class="comment"># 替换指定位置元素的值 # a此时是[789,456]</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">del</span> c[<span class="number">0</span>] <span class="comment"># 删除列表中指定元素 # 执行过后 c是[2,3,4,5,6,7,8,9] # 如果重复执行会一直删除首元素</span></span><br></pre></td></tr></table></figure>
+<h4 id="in"><a href="#in" class="headerlink" title="in"></a>in</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">d = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>]</span><br><span class="line"><span class="number">8</span> <span class="keyword">in</span> d <span class="comment"># True</span></span><br><span class="line"><span class="number">10</span> <span class="keyword">in</span> d <span class="comment"># False</span></span><br><span class="line"><span class="number">10</span> <span class="keyword">not</span> <span class="keyword">in</span> d <span class="comment"># True</span></span><br><span class="line">e = <span class="string">&#x27;a b c&#x27;</span></span><br><span class="line"><span class="string">&#x27;a&#x27;</span> <span class="keyword">in</span> e <span class="comment"># in关键词还可以作用在字符串上 # True  </span></span><br></pre></td></tr></table></figure>
+<h4 id="计数"><a href="#计数" class="headerlink" title="计数"></a>计数</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a = [<span class="string">&#x27;a&#x27;</span>,<span class="string">&#x27;a&#x27;</span>,<span class="string">&#x27;a&#x27;</span>,<span class="string">&#x27;b&#x27;</span>,<span class="string">&#x27;b&#x27;</span>,<span class="string">&#x27;c&#x27;</span>]</span><br><span class="line">a.count(<span class="string">&#x27;a&#x27;</span>) <span class="comment"># 计数 # 3</span></span><br></pre></td></tr></table></figure>
+<h4 id="添加移除"><a href="#添加移除" class="headerlink" title="添加移除"></a>添加移除</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">a = []</span><br><span class="line">a.append(<span class="string">&#x27;a&#x27;</span>) <span class="comment"># 往空列表中添加元素 # [&#x27;a&#x27;]</span></span><br><span class="line">a.append([<span class="string">&#x27;1&#x27;</span>,<span class="string">&#x27;2&#x27;</span>]) <span class="comment"># 继续添加 这次添加的是一个list # [&#x27;a&#x27;,[&#x27;1&#x27;,&#x27;2&#x27;]]</span></span><br><span class="line"><span class="comment"># .append() 在列表末尾添加</span></span><br><span class="line"></span><br><span class="line">a.insert(<span class="number">1</span>,<span class="string">&#x27;b&#x27;</span>) <span class="comment"># 在列表index=1处插入元素&#x27;b&#x27; # [&#x27;a&#x27;,&#x27;b&#x27;,[&#x27;1&#x27;,&#x27;2&#x27;]]</span></span><br><span class="line"></span><br><span class="line">b = [<span class="string">&#x27;a&#x27;</span>,<span class="string">&#x27;a&#x27;</span>,<span class="string">&#x27;b&#x27;</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>]</span><br><span class="line">b.remove(<span class="string">&#x27;a&#x27;</span>) <span class="comment"># 移除列表中元素&#x27;a&#x27; # 有多个相同值时默认移除第一个出现的 # [&#x27;a&#x27;,&#x27;b&#x27;,1,2,3,4]</span></span><br></pre></td></tr></table></figure>
+<h4 id="弹出"><a href="#弹出" class="headerlink" title="弹出"></a>弹出</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a = [<span class="string">&#x27;python&#x27;</span>,<span class="string">&#x27;abc&#x27;</span>]</span><br><span class="line">a.pop(<span class="number">1</span>) <span class="comment"># 弹出index=1处的元素，并删除这个元素 # &#x27;abc&#x27;</span></span><br><span class="line"><span class="comment"># a此时为[&#x27;python&#x27;]</span></span><br></pre></td></tr></table></figure>
+<h4 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">a = [<span class="number">1</span>,<span class="number">4</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">a.sort() <span class="comment"># 直接对原列表排序 # [1,2,3,4]</span></span><br><span class="line"></span><br><span class="line">b = [<span class="number">1</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">b2 = <span class="built_in">sorted</span>(b) <span class="comment">#不改变原列表 # b2为[1,2,3,4,5] # b没有变化 [1,4,5,2,3]</span></span><br></pre></td></tr></table></figure>
+<h4 id="颠倒"><a href="#颠倒" class="headerlink" title="颠倒"></a>颠倒</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a = [<span class="string">&#x27;c&#x27;</span>,<span class="string">&#x27;b&#x27;</span>,<span class="string">&#x27;a&#x27;</span>]</span><br><span class="line">a.reverse() <span class="comment"># [&#x27;a&#x27;,&#x27;b&#x27;,&#x27;c&#x27;]</span></span><br></pre></td></tr></table></figure>
+<h2 id="字典结构"><a href="#字典结构" class="headerlink" title="字典结构"></a>字典结构</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 两种定义方法</span></span><br><span class="line">dic = &#123;&#125;</span><br><span class="line">dic2 = <span class="built_in">dict</span>()</span><br></pre></td></tr></table></figure>
+<h3 id="字典操作"><a href="#字典操作" class="headerlink" title="字典操作"></a>字典操作</h3><h4 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># key-value # 键-值</span></span><br><span class="line">dic = &#123;&#125;</span><br><span class="line">dic[<span class="string">&#x27;first&#x27;</span>] = <span class="number">123</span> <span class="comment"># dic此时为&#123;&#x27;first&#x27;:123&#125;</span></span><br><span class="line">dic[<span class="string">&#x27;python&#x27;</span>] = <span class="number">456</span> <span class="comment"># dic此时为&#123;&#x27;first&#x27;:123,&#x27;python&#x27;:456&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 上述方式一个个往字典里加，也可以一次性初始化好</span></span><br><span class="line">dic2 = &#123;<span class="string">&#x27;first&#x27;</span>:<span class="number">123</span>,<span class="string">&#x27;python&#x27;</span>:<span class="number">789</span>&#125;</span><br><span class="line"><span class="comment"># 或者</span></span><br><span class="line">dic2 = <span class="built_in">dict</span>([(<span class="string">&#x27;first&#x27;</span>,<span class="number">123</span>),(<span class="string">&#x27;python&#x27;</span>,<span class="number">789</span>)]) <span class="comment"># &#123;&#x27;first&#x27;:123,&#x27;python&#x27;:789&#125; # 比较麻烦不直接</span></span><br></pre></td></tr></table></figure>
+<h4 id="通过键找到值"><a href="#通过键找到值" class="headerlink" title="通过键找到值"></a>通过键找到值</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 字典没有顺序，索引不通过index来做</span></span><br><span class="line">dic = &#123;<span class="string">&#x27;first&#x27;</span>:<span class="number">123</span>,<span class="string">&#x27;python&#x27;</span>:<span class="number">789</span>&#125;</span><br><span class="line">dic[<span class="string">&#x27;python&#x27;</span>] <span class="comment"># 通过键找到值 # 456</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 另一种通过键找到值的方式</span></span><br><span class="line">dic.get(<span class="string">&#x27;python&#x27;</span>) <span class="comment"># 456</span></span><br><span class="line"></span><br><span class="line">dic[<span class="string">&#x27;python&#x27;</span>] = <span class="number">789</span> <span class="comment"># 更新值 # dic此时为&#123;&#x27;first&#x27;:123,&#x27;python&#x27;:789&#125;</span></span><br></pre></td></tr></table></figure>
+<h4 id="嵌套"><a href="#嵌套" class="headerlink" title="嵌套"></a>嵌套</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">l1 = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">dic = &#123;&#125;</span><br><span class="line">dic[<span class="string">&#x27;a&#x27;</span>] = l1 <span class="comment"># dic此时为&#123;&#x27;a&#x27;:[1,2,3]&#125;</span></span><br><span class="line"><span class="comment"># key值一般都是字符串，value值什么都可以</span></span><br><span class="line"></span><br><span class="line">dic2 = &#123;&#125;</span><br><span class="line">d1 = &#123;<span class="string">&#x27;a&#x27;</span>:<span class="number">1</span>,<span class="string">&#x27;b&#x27;</span>:<span class="number">2</span>&#125;</span><br><span class="line">d2 = &#123;<span class="string">&#x27;c&#x27;</span>:<span class="number">3</span>,<span class="string">&#x27;e&#x27;</span>:<span class="number">4</span>&#125;</span><br><span class="line">dic2[<span class="string">&#x27;test1&#x27;</span>] = d1</span><br><span class="line">dic2[<span class="string">&#x27;test2&#x27;</span>] = d2</span><br><span class="line">dic2 <span class="comment"># &#123;&#x27;test1&#x27;:&#123;&#x27;a&#x27;:1,&#x27;b&#x27;:2&#125;, &#x27;test2&#x27;:&#123;&#x27;c&#x27;:3,&#x27;e&#x27;:4&#125;&#125; # 字典结构嵌套字典结构</span></span><br></pre></td></tr></table></figure>
+<h4 id="对键值进行操作"><a href="#对键值进行操作" class="headerlink" title="对键值进行操作"></a>对键值进行操作</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">dic = &#123;<span class="string">&#x27;first&#x27;</span>:<span class="number">123</span>,<span class="string">&#x27;python&#x27;</span>:<span class="number">789</span>&#125;</span><br><span class="line">dic[<span class="string">&#x27;first&#x27;</span>] += <span class="number">1</span> <span class="comment"># 自加1 # dic此时为&#123;&#x27;first&#x27;:124,&#x27;python&#x27;:789&#125;</span></span><br></pre></td></tr></table></figure>
+<h4 id="弹出-1"><a href="#弹出-1" class="headerlink" title="弹出"></a>弹出</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">dic = &#123;<span class="string">&#x27;first&#x27;</span>:<span class="number">123</span>,<span class="string">&#x27;python&#x27;</span>:<span class="number">789</span>&#125;</span><br><span class="line">dic.pop(<span class="string">&#x27;first&#x27;</span>) <span class="comment"># dic此时为&#123;&#x27;python&#x27;:789&#125;</span></span><br><span class="line"><span class="comment"># pop弹出并移除</span></span><br></pre></td></tr></table></figure>
+<h4 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">dic = &#123;<span class="string">&#x27;first&#x27;</span>:<span class="number">123</span>,<span class="string">&#x27;python&#x27;</span>:<span class="number">789</span>&#125;</span><br><span class="line"><span class="keyword">del</span> dic[<span class="string">&#x27;first&#x27;</span>] <span class="comment"># dic此时为&#123;&#x27;python&#x27;:789&#125;</span></span><br></pre></td></tr></table></figure>
+<h4 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">d1 = &#123;<span class="string">&#x27;a&#x27;</span>:<span class="number">123</span>,<span class="string">&#x27;b&#x27;</span>:<span class="number">789</span>&#125;</span><br><span class="line">d2 = &#123;<span class="string">&#x27;a&#x27;</span>:<span class="number">789</span>,<span class="string">&#x27;c&#x27;</span>:<span class="number">888</span>&#125;</span><br><span class="line">d1.update(d2) <span class="comment"># d1此时为&#123;&#x27;a&#x27;:789,&#x27;b&#x27;:789,&#x27;c&#x27;:888&#125;</span></span><br><span class="line"><span class="comment"># update更新并添加键值 </span></span><br></pre></td></tr></table></figure>
+<h4 id="in-1"><a href="#in-1" class="headerlink" title="in"></a>in</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">d1 = &#123;<span class="string">&#x27;a&#x27;</span>:<span class="number">123</span>,<span class="string">&#x27;b&#x27;</span>:<span class="number">789</span>&#125;</span><br><span class="line"><span class="string">&#x27;a&#x27;</span> <span class="keyword">in</span> d1 <span class="comment"># True</span></span><br><span class="line"><span class="string">&#x27;hello&#x27;</span> <span class="keyword">in</span> d1 <span class="comment"># False</span></span><br></pre></td></tr></table></figure>
+<h4 id="打印键值"><a href="#打印键值" class="headerlink" title="打印键值"></a>打印键值</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">d1 = &#123;<span class="string">&#x27;a&#x27;</span>:<span class="number">123</span>,<span class="string">&#x27;b&#x27;</span>:<span class="number">789</span>&#125;</span><br><span class="line">d1.keys() <span class="comment"># dict_keys([&#x27;a&#x27;,&#x27;b&#x27;])</span></span><br><span class="line">d1.values() <span class="comment"># dict_values([123,789])</span></span><br><span class="line">d1.items() <span class="comment"># dict_items([(&#x27;a&#x27;,123),(&#x27;b&#x27;,789)])</span></span><br></pre></td></tr></table></figure>
+<h2 id="Set集合结构"><a href="#Set集合结构" class="headerlink" title="Set集合结构"></a>Set集合结构</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">s = [<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">s1 = <span class="built_in">set</span>(s) <span class="comment"># 集合会保留下来唯一的那些元素 # &#123;1,2,3&#125;</span></span><br><span class="line"><span class="comment"># 集合中元素唯一</span></span><br><span class="line"></span><br><span class="line">s2 = <span class="built_in">set</span>([<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]) <span class="comment"># [1,2,3]</span></span><br><span class="line">s2 = &#123;<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125; <span class="comment"># [1,2,3] </span></span><br><span class="line"><span class="comment"># &#123;&#125;写上key-value是字典，不写是集合</span></span><br></pre></td></tr></table></figure>
+<h3 id="集合操作"><a href="#集合操作" class="headerlink" title="集合操作"></a>集合操作</h3><h4 id="并集"><a href="#并集" class="headerlink" title="并集"></a>并集</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">a = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>&#125;</span><br><span class="line">b = &#123;<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>&#125;</span><br><span class="line"></span><br><span class="line">a.union(b) <span class="comment"># a和b的并集 # &#123;1,2,3,4,5&#125;</span></span><br><span class="line">b.union(a) <span class="comment"># b和a的并集 # &#123;1,2,3,4,5&#125;</span></span><br><span class="line">a | b <span class="comment"># |并集符合 # &#123;1,2,3,4,5&#125;</span></span><br></pre></td></tr></table></figure>
+<h4 id="交集"><a href="#交集" class="headerlink" title="交集"></a>交集</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">a = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>&#125;</span><br><span class="line">b = &#123;<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>&#125;</span><br><span class="line">a.intersection(b) <span class="comment"># &#123;2,3,4&#125;</span></span><br><span class="line">a &amp; b <span class="comment"># &amp; 交集符合 # &#123;2,3,4&#125;</span></span><br></pre></td></tr></table></figure>
+<h4 id="差集"><a href="#差集" class="headerlink" title="差集"></a>差集</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">a = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>&#125;</span><br><span class="line">b = &#123;<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>&#125;</span><br><span class="line">a.difference(b) <span class="comment"># a中有b中没有的集合 # &#123;1&#125;</span></span><br><span class="line">b.difference(a) <span class="comment"># b中有a中没有的集合 # &#123;5&#125;</span></span><br><span class="line"></span><br><span class="line">a - b <span class="comment"># &#123;1&#125;</span></span><br><span class="line">b - a <span class="comment"># &#123;5&#125;</span></span><br></pre></td></tr></table></figure>
+<h4 id="子集"><a href="#子集" class="headerlink" title="子集"></a>子集</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">a = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>&#125;</span><br><span class="line">b = &#123;<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>&#125;</span><br><span class="line">b.issubset&#123;a&#125; <span class="comment"># b是否是a的子集 # True</span></span><br><span class="line">a.issubset&#123;b&#125; <span class="comment"># a是否是b的子集 # False</span></span><br><span class="line"></span><br><span class="line">b &lt;= a <span class="comment"># True</span></span><br><span class="line">b &gt; a <span class="comment"># False</span></span><br><span class="line">a &lt;= a <span class="comment"># 自己是自己的子集 # True</span></span><br></pre></td></tr></table></figure>
+<h4 id="添加"><a href="#添加" class="headerlink" title="添加"></a>添加</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>&#125;</span><br><span class="line">a.add(<span class="number">4</span>) <span class="comment"># &#123;1,2,3,4&#125;</span></span><br></pre></td></tr></table></figure>
+<h4 id="更新-1"><a href="#更新-1" class="headerlink" title="更新"></a>更新</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a &#x3D; &#123;1,2,3&#125;</span><br><span class="line">a.update([4,5,6]) # &#123;1,2,3,4,5,6&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="删除-1"><a href="#删除-1" class="headerlink" title="删除"></a>删除</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a &#x3D; &#123;1,2,3,4,5,6&#125;</span><br><span class="line">a.remove(1) # &#123;2,3,4,5,6&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="弹出-2"><a href="#弹出-2" class="headerlink" title="弹出"></a>弹出</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a = &#123;<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>&#125;</span><br><span class="line">a.pop() <span class="comment"># 不能加参数 每次只弹出集合中首元素 # &#123;3,4,5,6&#125;</span></span><br></pre></td></tr></table></figure>
+<h2 id="判断结构"><a href="#判断结构" class="headerlink" title="判断结构"></a>判断结构</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="number">100</span></span><br><span class="line"><span class="keyword">if</span> a &gt; <span class="number">200</span>:</span><br><span class="line">	print(<span class="string">&#x27;200&#x27;</span>)</span><br><span class="line"><span class="keyword">elif</span> a &lt; <span class="number">100</span>: <span class="comment"># elif可以写多个</span></span><br><span class="line">	print(<span class="string">&#x27;100&#x27;</span>)</span><br><span class="line"><span class="keyword">else</span>: <span class="comment"># else至多只有一个</span></span><br><span class="line">    print(<span class="string">&#x27;100-200&#x27;</span>)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a = [<span class="number">123</span>,<span class="number">456</span>,<span class="number">789</span>]</span><br><span class="line"><span class="keyword">if</span> <span class="number">123</span> <span class="keyword">in</span> a:</span><br><span class="line">	print(<span class="string">&#x27;ok&#x27;</span>)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a = &#123;<span class="string">&#x27;a&#x27;</span>:<span class="number">123</span>, <span class="string">&#x27;b&#x27;</span>:<span class="number">456</span>&#125;</span><br><span class="line"><span class="keyword">if</span> <span class="string">&#x27;a&#x27;</span> <span class="keyword">in</span> a:</span><br><span class="line">    print(<span class="string">&#x27;ok&#x27;</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="循环结构"><a href="#循环结构" class="headerlink" title="循环结构"></a>循环结构</h2><h3 id="while循环"><a href="#while循环" class="headerlink" title="while循环"></a>while循环</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="number">0</span></span><br><span class="line"><span class="keyword">while</span> a &lt; <span class="number">10</span>:</span><br><span class="line">	print(a)</span><br><span class="line">    a += <span class="number">1</span> <span class="comment"># 防止死循环</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="built_in">set</span>([<span class="string">&#x27;a&#x27;</span>,<span class="string">&#x27;b&#x27;</span>,<span class="string">&#x27;c&#x27;</span>]) <span class="comment">#集合</span></span><br><span class="line"><span class="keyword">while</span> a:</span><br><span class="line">	b = a.pop()</span><br><span class="line">    print(b) <span class="comment"># &#x27;a&#x27;,&#x27;b&#x27;,&#x27;c&#x27;</span></span><br></pre></td></tr></table></figure>
+<h3 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="built_in">set</span>([<span class="string">&#x27;a&#x27;</span>,<span class="string">&#x27;b&#x27;</span>,<span class="string">&#x27;c&#x27;</span>])</span><br><span class="line"><span class="keyword">for</span> b <span class="keyword">in</span> a: <span class="comment"># b是变量的别名 # 相当于把集合中的值赋值给了b</span></span><br><span class="line">	print(b) <span class="comment"># &#x27;a&#x27;,&#x27;b&#x27;,&#x27;c&#x27;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">10</span>): <span class="comment"># range(10) 从0开始的10个数，到9</span></span><br><span class="line">    print(i)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">a = [<span class="number">123</span>,<span class="number">456</span>,<span class="number">789</span>,<span class="number">0</span>]</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">3</span>): <span class="comment"># 把i当作索引 打印列表a中从0到3-1元素</span></span><br><span class="line">	print(a[i]) <span class="comment"># 123 456 789</span></span><br><span class="line"> </span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(a)): <span class="comment"># 打印列表a中从0到len(a)-1元素，即列表全部元素</span></span><br><span class="line">    print(a[i]) <span class="comment"># 123 456 789 0</span></span><br></pre></td></tr></table></figure>
+<h3 id="continue"><a href="#continue" class="headerlink" title="continue"></a>continue</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">a = [<span class="number">10</span>,<span class="number">11</span>,<span class="number">12</span>,<span class="number">13</span>,<span class="number">14</span>,<span class="number">15</span>]</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> a:</span><br><span class="line">    <span class="keyword">if</span> i%<span class="number">2</span> == <span class="number">0</span>: <span class="comment"># 余数为0，即偶数</span></span><br><span class="line">        print(i)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">continue</span> <span class="comment"># 代码执行到此进行下一次遍历，下一行的print(i)不会执行，因此11,13,15不会打印</span></span><br><span class="line">    print(i)</span><br><span class="line"><span class="comment"># 10 10 12 12 14 14</span></span><br></pre></td></tr></table></figure>
+<h3 id="break"><a href="#break" class="headerlink" title="break"></a>break</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">a = [<span class="number">10</span>,<span class="number">11</span>,<span class="number">12</span>,<span class="number">13</span>,<span class="number">14</span>,<span class="number">15</span>]</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> a:</span><br><span class="line">    <span class="keyword">if</span> i%<span class="number">2</span> == <span class="number">0</span>: <span class="comment"># 余数为0，即偶数</span></span><br><span class="line">        print(i)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">break</span> <span class="comment"># 结束整个循环，因此10以后的值不会打印</span></span><br><span class="line">    print(i)</span><br><span class="line"><span class="comment"># 10 10 </span></span><br></pre></td></tr></table></figure>
+<h2 id="函数定义"><a href="#函数定义" class="headerlink" title="函数定义"></a>函数定义</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">print_value</span>():</span></span><br><span class="line">    print(<span class="string">&quot;Hello World&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">add_ab</span>(<span class="params">a, b</span>):</span></span><br><span class="line">    <span class="keyword">return</span>(a+b)</span><br><span class="line">add = add_ab(<span class="number">3</span>,<span class="number">5</span>) <span class="comment"># 定义函数中有两个参数，调用时也需要有两个参数 # 8</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">add_ab</span>(<span class="params">a=<span class="number">1</span>, b=<span class="number">2</span></span>)： # 设置默认值</span></span><br><span class="line"><span class="function">	<span class="title">return</span>(<span class="params">a+b</span>)</span></span><br><span class="line">default = add_ab() # 3</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">add_number</span>(<span class="params">a, *args</span>):</span> <span class="comment"># *args让函数接受不确定个数的参数</span></span><br><span class="line">    b = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> args:</span><br><span class="line">        a += i</span><br><span class="line">        b += a</span><br><span class="line">    <span class="keyword">return</span> a, b <span class="comment"># 可以return多个值</span></span><br><span class="line">a, b = add_number(<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>) <span class="comment"># 6 9 </span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">add_number2</span>(<span class="params">a, **kwargs</span>):</span> <span class="comment"># **kwargs 传进来的参数只能是键值对的格式</span></span><br><span class="line">    <span class="keyword">for</span> arg,value <span class="keyword">in</span> kwargs.items():</span><br><span class="line">        print(arg, value)</span><br><span class="line">add_number2(<span class="number">1</span>,x=<span class="number">2</span>,y=<span class="number">3</span>) </span><br><span class="line"><span class="comment"># y 3</span></span><br><span class="line"><span class="comment"># x 2</span></span><br></pre></td></tr></table></figure>
+<h2 id="异常"><a href="#异常" class="headerlink" title="异常"></a>异常</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># try...except...</span></span><br><span class="line"><span class="keyword">import</span> math</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">10</span>):</span><br><span class="line">	<span class="keyword">try</span>:</span><br><span class="line">        input_number = <span class="built_in">input</span>(<span class="string">&quot;enter a number: &quot;</span>) <span class="comment"># input()让用户输入</span></span><br><span class="line">        <span class="keyword">if</span> input_number == <span class="string">&#x27;q&#x27;</span>:</span><br><span class="line">			<span class="keyword">break</span></span><br><span class="line">        result = math.log(<span class="built_in">float</span>(input_number))</span><br><span class="line">        print(result)</span><br><span class="line">    <span class="keyword">except</span> ValueError: <span class="comment"># except可以写多个</span></span><br><span class="line">        print(<span class="string">&#x27;ValueError: input must &gt; 0&#x27;</span>)</span><br><span class="line">    <span class="keyword">except</span> ZeroDivisionError:</span><br><span class="line">        print(<span class="string">&#x27;divided by 0&#x27;</span>)</span><br><span class="line">    <span class="keyword">except</span> Exception: </span><br><span class="line">        print(<span class="string">&#x27;Error&#x27;</span>)</span><br><span class="line">    <span class="keyword">finally</span>:</span><br><span class="line">        print(<span class="string">&#x27;always print finally block&#x27;</span>) <span class="comment"># finally部分始终会执行</span></span><br></pre></td></tr></table></figure>
+<h2 id="类"><a href="#类" class="headerlink" title="类"></a>类</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">soldier</span>:</span></span><br><span class="line">    <span class="string">&#x27;帮助信息：XXXXXX&#x27;</span> <span class="comment"># 用soldier.__doc__ 调用</span></span><br><span class="line">    </span><br><span class="line">    hp = <span class="number">100</span> <span class="comment"># 所有实例都会共享</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment"># 构造函数，初始化的方法，当创建一个类的时候，首先会调用它</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self, name, age</span>):</span> <span class="comment"># 注意init前后是两个&#x27;_&#x27;</span></span><br><span class="line">        self.name = name</span><br><span class="line">        self.age = age</span><br><span class="line">        </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">display</span>(<span class="params">self</span>):</span></span><br><span class="line">        print(<span class="string">&#x27;hp = &#x27;</span>, soldier.hp) </span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">display_name</span>(<span class="params">self</span>):</span></span><br><span class="line">        print(self.name)</span><br><span class="line"></span><br><span class="line">p1 = soldier(<span class="string">&#x27;Jeff&#x27;</span>,<span class="number">30</span>) <span class="comment"># name, age</span></span><br><span class="line">p2 = soldier(<span class="string">&#x27;tom&#x27;</span>,<span class="number">31</span>)</span><br><span class="line">p1.name <span class="comment"># Jeff</span></span><br><span class="line">p1.display() <span class="comment"># &#x27;hp = 100&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">hasattr</span>(p1, <span class="string">&#x27;name&#x27;</span>) <span class="comment"># True</span></span><br><span class="line"><span class="built_in">getattr</span>(p1, <span class="string">&#x27;name&#x27;</span>) <span class="comment"># &#x27;Jeff&#x27;</span></span><br><span class="line"><span class="built_in">setattr</span>(p1, <span class="string">&#x27;name&#x27;</span>, <span class="string">&#x27;Jeffrey&#x27;</span>) <span class="comment"># 改变p1名字</span></span><br><span class="line"><span class="built_in">delattr</span>(p1, <span class="string">&#x27;name&#x27;</span>) <span class="comment"># 删除p1名字</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 定义父类</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Parent</span>:</span></span><br><span class="line">    number = <span class="number">100</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self</span>):</span></span><br><span class="line">        print(<span class="string">&#x27;调用父类构造函数&#x27;</span>)</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">parentMethod</span>(<span class="params">self</span>):</span></span><br><span class="line">        print(<span class="string">&#x27;调用父类方法&#x27;</span>)</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">setAttr</span>(<span class="params">self,attr</span>):</span></span><br><span class="line">        Parent.parentAttr = attr</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">getAttr</span>(<span class="params">self</span>):</span></span><br><span class="line">        print(<span class="string">&#x27;父类属性：&#x27;</span>, Parent.parentAttr)</span><br><span class="line">	<span class="function"><span class="keyword">def</span> <span class="title">newMethod</span>(<span class="params">self</span>):</span></span><br><span class="line">        print(<span class="string">&#x27;父类要被重写的方法&#x27;</span>)</span><br><span class="line"><span class="comment"># 定义子类</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">child</span>(<span class="params">Parent</span>):</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self</span>):</span></span><br><span class="line">        print(<span class="string">&#x27;调用子类构造函数&#x27;</span>)</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">childMethod</span>(<span class="params">self</span>):</span></span><br><span class="line">        print(<span class="string">&#x27;调用子类方法&#x27;</span>)</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">newMethod</span>(<span class="params">self</span>):</span> <span class="comment"># 子类方法重新，名字和父类一致</span></span><br><span class="line">        print(<span class="string">&#x27;子类把父类的方法改掉了&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 实例化子类</span></span><br><span class="line">c = child() <span class="comment"># &#x27;调用子类构造函数&#x27;</span></span><br><span class="line">c.childMethod() <span class="comment"># &#x27;调用子类方法&#x27;</span></span><br><span class="line">c.parentMethod() <span class="comment"># &#x27;调用父类方法&#x27;</span></span><br><span class="line">c.setAttr(<span class="number">100</span>)</span><br><span class="line">c.getAttr() <span class="comment"># &#x27;父类属性：100&#x27;</span></span><br><span class="line">c.newMethod() <span class="comment"># &#x27;子类把父类的方法改掉了&#x27;</span></span><br></pre></td></tr></table></figure>
 
     </div>
 
@@ -718,20 +436,6 @@ c.newMethod() # &#39;子类把父类的方法改掉了&#39;</code></pre>
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder"></span>
-</div>
-<div class="wordcount">
-  <span class="post-meta-item">
-    <span class="post-meta-item-icon">
-      <i class="fa fa-chart-line"></i>
-    </span>
-    <span title="站点总字数">11k</span>
-  </span>
-  <span class="post-meta-item">
-    <span class="post-meta-item-icon">
-      <i class="fa fa-coffee"></i>
-    </span>
-    <span title="站点阅读时长">10 分钟</span>
-  </span>
 </div>
 
     </div>
