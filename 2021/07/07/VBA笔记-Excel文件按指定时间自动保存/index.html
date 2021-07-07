@@ -285,7 +285,6 @@
     <div class="post-body" itemprop="articleBody">
         <p>《跟着孙兴华学习Excel VBA 第一季》学习笔记</p>
 <a id="more"></a>
-
 <p><strong>032.Excel文件按指定时间自动保存</strong></p>
 <p>（确保宏设置中已选中“启用所有宏”）</p>
 <ol>
@@ -293,11 +292,11 @@
 <li>Visual Basic中右键”Sheet”，选择插入模块，并在模块中复制以下代码</li>
 </ol>
 <figure class="highlight plain"><figcaption><span>basic</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Sub otime()</span><br><span class="line">    &#39;10秒后自动运行WbSave过程</span><br><span class="line">    Application.OnTime Now() + TimeValue(&quot;00:00:10&quot;), &quot;WbSave&quot;</span><br><span class="line">End Sub</span><br><span class="line">Sub WbSave()</span><br><span class="line">    ThisWorkbook.Save &#39;保存本工作簿</span><br><span class="line">    Call otime  &#39;再次运行otime过程</span><br><span class="line">End Sub</span><br></pre></td></tr></table></figure>
-<ol start="3">
+<ol>
 <li>双击”ThisWorkbook”，并在其中复制以下代码</li>
 </ol>
 <figure class="highlight plain"><figcaption><span>basic</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Private Sub Workbook_Open()</span><br><span class="line">Call otime</span><br><span class="line">End Sub</span><br></pre></td></tr></table></figure>
-<ol start="4">
+<ol>
 <li>保存文件，自动保存功能设置成功</li>
 </ol>
 
@@ -405,6 +404,8 @@
 
 
 
+
+  
 
   
 
